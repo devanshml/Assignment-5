@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>
+        Assignment 3
+    </title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <p>Sign in to GitHub</p>
+    <div class="myform">
+        <form id="myform">
+
+            <br />
+            <label>Username or email adress</label>
+            <br />
+            <input type="text" id="myId" required/>
+            <br />
+            <label>Enter your password</label>
+            <label> <a href="#">forgot password</a> </label>
+            <br />
+            <input type="password" required/>
+            <br />
+
+            <button onclick="signup">Sign in</button>
+            <br /><br /><br />
+            <p1> <label>New to GitHub? <a href="signup.html">create an account</a></label></p1>
+
+
+    </div>
+    <script>
+        function login() {
+            var obj = document.getElementById("myId");
+            var typeobj = obj.value;
+
+            var phone = Number(typeobj);
+            if (isNan(phone)) {
+                console.log("String:", typeObj);
+
+            } else {
+                console.log("Number:", Phone)
+            }
+        }
+    </script>
+</body>
+
+
+</html>

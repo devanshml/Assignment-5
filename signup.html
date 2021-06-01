@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        Assignment 5
+    </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <h4> <a href="login.html">Signin</a></h4>
+    <h5>Join GitHub</h5>
+    <P>Create your account</P>
+    <div>
+        <form id="myform">
+            <br />
+            <label>Username</label>
+
+            <br />
+            <input type="Username" id="myId" required/>
+
+            <br />
+            <label>Email address</label>
+            <br />
+            <input type="email" required/>
+            <br />
+            <label>Password</label>
+            <br />
+            <input type="Password" required/>
+
+            <br />
+            <button onclick="create()">Create account</button>
+
+
+
+
+    </div>
+    <script>
+        function Signup() {
+            var obj = document.getElementById("myId");
+            var typeobj = obj.value;
+
+            var phone = Number(typeobj);
+            if (isNan(phone)) {
+                console.log("String:", typeObj);
+
+            } else {
+                console.log("Number:", Phone)
+            }
+        }
+    </script>
+</body>
+
+</html>
